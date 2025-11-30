@@ -20,7 +20,7 @@ It focuses on:
   
 ## 📂 Dataset
 
-The dataset is: [USA_Cars_sales.csv (122k+rows)](https://www.kaggle.com/datasets/olivia05144/usa-used-cars-dataset)
+The dataset is: [USA_Used_Cars dataset (122k+rows)](https://www.kaggle.com/datasets/olivia05144/usa-used-cars-dataset)
 It typically includes features such as:
 - Make / Model
 - Year
@@ -69,7 +69,7 @@ The project includes visualizations such as:
 ```
 .
 ├── data/
-│   └── Used_Cars_sales.csv
+│   └── used_car_sales.csv
 ├── src/
 │   ├── functions/
 │   │  ├── preprocessing.py
