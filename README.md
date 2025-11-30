@@ -18,166 +18,103 @@ It focuses on:
 - Evaluating model performance
 - Comparing algorithms to determine the best performer
   
-📂 Dataset
+## 📂 Dataset
 
-The dataset used is Used_Cars_sales.csv (122k+ rows).
+The dataset is: [USA_Cars_sales.csv (122k+rows)](https://www.kaggle.com/datasets/olivia05144/usa-used-cars-dataset)
 It typically includes features such as:
+- Make / Model
+- Year
+- Mileage
+- Trim
+- Engine etc....
 
-Make / Model
+## 🧠 Models Implemented
 
-Year
+The project compares two regression algorithms:
 
-Mileage
-
-Fuel type
-
-Transmission
-
-Engine size
-
-Seller type
-
-Location
-
-…and more
-
-(If needed, you can add a Data Dictionary section later.)
-
-🧠 Models Implemented
-
-The project compares several regression algorithms:
-
-Linear Regression
-
-Lasso / Ridge
-
-Random Forest Regressor
-
-Gradient Boosting Regressor
-
-XGBoost (optional)
-
-LightGBM (optional)
-
-Neural Network (MLPRegressor) (optional)
+- Linear Regression
+- Random Forest Regressor
 
 Metrics used:
 
-RMSE
+- RMSE
+- R² Score
 
-MAE
+## 🛠️ Technologies Used
 
-R² Score
+- Python
+- Pandas
+- NumPy
+- Scikit-Learn
+- Matplotlib
 
-🛠️ Technologies Used
-
-Python
-
-Pandas
-
-NumPy
-
-Scikit-Learn
-
-Matplotlib / Seaborn
-
-Jupyter Notebooks (optional)
-
-📊 Exploratory Data Analysis (EDA)
+## 📊 Exploratory Data Analysis (EDA)
 
 The project includes visualizations such as:
+- Distribution of car prices
+- Correlation heatmaps
+- Mileage vs. price
+- Age vs. price
+- Categorical distributions (fuel type, transmission, etc.)
 
-Distribution of car prices
+## 🧹 Preprocessing Pipeline
 
-Correlation heatmaps
+- Handling missing values
+- Removing outliers
+- Encoding categorical columns
+- Scaling numeric features
+- Creating train/validation/test splits
 
-Mileage vs. price
-
-Age vs. price
-
-Categorical distributions (fuel type, transmission, etc.)
-
-🧹 Preprocessing Pipeline
-
-Includes:
-
-Handling missing values
-
-Removing outliers
-
-Encoding categorical columns
-
-Scaling numeric features
-
-Creating train/validation/test splits
-
-Stratified splitting (if applied)
-
-📁 Project Structure
+## 📁 Project Structure
+```
 .
 ├── data/
 │   └── Used_Cars_sales.csv
 ├── src/
-│   ├── preprocessing.py
-│   ├── models.py
-│   ├── evaluation.py
-│   └── utils.py
-├── notebooks/
-│   └── eda.ipynb
+│   ├── functions/
+│   │  ├── preprocessing.py
+│   │  ├── fengineering.py
+│   │  ├── modeling.py
+│   ├── loader/
+│   │  └── load_data.py
 ├── main.py
 └── README.md
+```
 
-
-(Adjust this to match your repo.)
-
-▶️ How to Run
-
+## ▶️ How to Run
+```bash
 Clone the repository:
-
 git clone https://github.com/<your-username>/<your-repo-name>.git
 cd <your-repo-name>
 
-
 Install dependencies:
-
 pip install -r requirements.txt
 
-
 Run the main pipeline:
-
 python main.py
-
-📈 Results
+```
+## 📈 Results
 
 The project prints:
 
-Training/Validation/Test scores
+- Training/Validation/Test scores
+- RMSE, R²
+- Confusion-matrix-style plots for regression errors
+- Model comparison table
+  
+## ✔ Future Improvements
 
-RMSE, MAE, R²
+- Hyperparameter tuning with Optuna or GridSearch
+- Deployment using FastAPI or Flask
+- Streamlit dashboard for predictions
+- Improved feature engineering
+- Model stacking/ensembling
 
-Confusion-matrix-style plots for regression errors (optional)
-
-Model comparison table
-
-You can also save results into CSV/plots.
-
-✔ Future Improvements
-
-Hyperparameter tuning with Optuna or GridSearch
-
-Deployment using FastAPI or Flask
-
-Streamlit dashboard for predictions
-
-Improved feature engineering
-
-Model stacking/ensembling
-
-🤝 Contributions
+## 🤝 Contributions
 
 Pull requests and suggestions are welcome!
 For major changes, please open an issue first.
 
-📜 License
+## 📜 License
 
 This project is licensed under the MIT License.
